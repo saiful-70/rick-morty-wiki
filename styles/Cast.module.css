@@ -1,0 +1,37 @@
+.backgroundCastWhole {
+  background-color: rgba(25, 29, 41, 0.9);
+  background-image: url("/images/cast/Background.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 1rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .backgroundCastWeb {
+    background-image: url("/images/cast/StarCast.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.backgroundCastDetailsWhole {
+  background-color: rgba(25, 29, 41, 0.9);
+  background-image: url("/images/cast/BackgroundCast.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 1rem;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 900px) {
+  .backgroundCastDetailsWeb {
+    /* background-color: rgba(25, 29, 41, 0.95); */
+    background-image: url("/images/cast/StarCast.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
