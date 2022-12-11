@@ -1,22 +1,13 @@
 import {
   Typography,
   Box,
-  Button,
-  linearProgressClasses,
-  Container,
 } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
-import SlowMotionVideoIcon from "@mui/icons-material/SlowMotionVideo";
-import headerBgImage from "../../public/images/home/Background.png";
-import Logo from "../../components/common/Logo";
-// import styles from "*.module.css";
 
 const HeadingPrimary = () => {
   return (
     <Box
       sx={{
-        // textAlign: { xs: "left", md: "center" },
         position: "relative",
       }}
     >
@@ -30,7 +21,6 @@ const HeadingPrimary = () => {
             xs: "4.5rem",
             md: "10rem",
           },
-          // textShadow: "5px 5px 0 #fff, 5px 5px 0 #ccc",
         }}
       >
         {/* BUBBLE  */}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 const Logo = () => {
   return (

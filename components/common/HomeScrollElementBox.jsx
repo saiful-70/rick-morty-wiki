@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import axios from "axios";
 import Link from "next/link";
@@ -30,8 +30,6 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
             key={value.id}
             sx={{
               background: "linear-gradient(to bottom right,   #9DFE00,#14D9E6)",
-              // width: boxWidth,
-              // height: boxHeight,
               borderRadius: "5px",
               clipPath:
                 link === "character"
@@ -41,7 +39,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
               justifyContent: "center",
               alignItems: "center",
               mr: "2rem",
-              p: 0.1,
+              p: "1px",
               transition: "600ms ease-in-out",
             }}
           >
@@ -115,13 +113,11 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    // alignItems: "center",
                     padding: ".5rem",
                     pl: 2,
                   }}
                 >
                   <Typography
-                    // component="span"
                     sx={{
                       fontSize: ".5rem",
                       fontWeight: 400,

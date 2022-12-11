@@ -17,7 +17,6 @@ const CharacterDetails = () => {
         return response.data;
       })
       .then((data) => {
-        // console.log(data);
         setCharacter(data);
       })
       .catch((err) => {

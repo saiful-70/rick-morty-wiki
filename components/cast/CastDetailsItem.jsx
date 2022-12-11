@@ -26,7 +26,6 @@ const CastDetailsItem = ({ icon, label, value, gridValue }) => {
         <Box
           sx={{
             position: "relative",
-            // height: "8rem",
             width: "2rem",
             height: "2rem",
           }}
@@ -48,7 +47,6 @@ const CastDetailsItem = ({ icon, label, value, gridValue }) => {
             <Box
               sx={{
                 position: "relative",
-                // height: "8rem",
                 width: "2rem",
                 height: "2rem",
               }}

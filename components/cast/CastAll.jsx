@@ -3,9 +3,6 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import axios from "axios";
 import Link from "next/link";
-import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
-import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import Logo from "../common/Logo";
 import AllCastHeader from "./CastAllHeader";
 import styles from "../../styles/Cast.module.css";
@@ -69,14 +66,12 @@ const AllCast = () => {
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
-                        // alignItems: "center",
                         padding: "1rem",
                       }}
                     >
                       <Box
                         sx={{
                           position: "relative",
-                          // height: "8rem",
                           width: "auto",
                           height: { xs: "14rem", md: "14rem" },
                           marginBottom: 1,
@@ -86,7 +81,6 @@ const AllCast = () => {
                           alt="logo"
                           src={character.image}
                           fill
-                          // style={{ postion: "absolute" }}
                         />
                       </Box>
                       <Typography
@@ -97,11 +91,6 @@ const AllCast = () => {
                           textAlign: "left",
                           color: "#fff",
                           mt: 1,
-                          // width: { xs: "15rem", md: "15rem" },
-                          // wordWrap: "normal",
-                          // whiteSpace: "nowrap",
-                          // textOverflow: "ellipsis",
-                          // overflow: "hidden",
                         }}
                       >
                         {character.name}

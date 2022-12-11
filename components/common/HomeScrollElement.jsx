@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { useDraggable } from "react-use-draggable-scroll";
 import { Box } from "@mui/material";
@@ -95,15 +95,12 @@ const HomeScrollElement = ({ boxSize, title, link }) => {
           overflow: "hidden",
           postion: "relative",
           alignItems: "center",
-          // overflowScrolling: "touch",
-          // WebkitOverflowScrolling: "touch",
         }}
         {...events}
         ref={scrl}
         onScroll={scrollCheck}
       >
         <HomeScrollElementBox boxSize={`${boxSize}px`} link={link} />
-        {/* NEXT AND PREVIOUS ICON */}
 
         {scrollX !== 0 && (
           <Box
@@ -121,7 +118,7 @@ const HomeScrollElement = ({ boxSize, title, link }) => {
               left: -5,
               alignSelf: "center",
             }}
-            onClick={() => slide(-(boxSize + 21))}
+            onClick={() => slide(-(boxSize + 20))}
           >
             <ArrowBackIosIcon color="primary" fontSize="small" />
           </Box>
@@ -142,7 +139,7 @@ const HomeScrollElement = ({ boxSize, title, link }) => {
               right: 0,
               cursor: "pointer",
             }}
-            onClick={() => slide(boxSize + 21)}
+            onClick={() => slide(boxSize + 20)}
           >
             <ArrowForwardIosIcon color="primary" fontSize="small" />
           </Box>

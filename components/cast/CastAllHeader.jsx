@@ -1,20 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Grid,
-  Typography,
-  Menu,
-  MenuItem,
-  Divider,
-  ListItem,
-  List,
-} from "@mui/material";
-import Image from "next/image";
-import axios from "axios";
-import Link from "next/link";
-import Logo from "../common/Logo";
+import { Box, Typography, Divider, ListItem, List } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import SearchIcon from "@mui/icons-material/Search";
@@ -22,8 +7,16 @@ import HeadingSecondary from "../heading/HeadingSecondary";
 
 const AllCastHeader = () => {
   const [isOpen, setisOpen] = useState(false);
+  const [filter, setFilter] = useState("Character");
 
-  const handleClick = () => {
+  const handleFilterClick = (e) => {
+    e.preventDefault();
+    setFilter(e.target.value);
+    setisOpen((prev) => !prev);
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault();
     setisOpen((prev) => !prev);
   };
 
@@ -40,17 +33,12 @@ const AllCastHeader = () => {
       <Box
         sx={{
           width: { xs: "60%", md: "30rem" },
-          // background: "linear-gradient(to bottom right,   #9DFE00,#14D9E6)",
-          // borderRadius: "2rem",
-          // p: 0.1,
         }}
       >
         <Box
           sx={{
             color: "#fff",
             fontWeight: 600,
-            // bgcolor: "secondary.main",
-            borderRadius: "1rem",
             display: "flex",
             height: "auto",
             alignItems: "center",
@@ -64,23 +52,27 @@ const AllCastHeader = () => {
               display: "flex",
               bgcolor: "secondary.main",
               cursor: "pointer",
-              display: "flex",
-              width: { xs: "auto", md: "50%" },
+              width: { xs: "40%", md: "50%" },
               position: "relative",
               alignItems: "center",
+              justifyContent: "center",
               height: "100%",
               borderTopLeftRadius: "2rem",
               borderBottomLeftRadius: "2rem",
-              px: 2,
+              textTransform: "capitalize",
             }}
             onClick={handleClick}
           >
             <Typography
               sx={{ fontWeight: 600, fontSize: { xs: "1rem", md: "1.6rem" } }}
             >
-              Characters
+              {filter}s
             </Typography>
-            {isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+            {isOpen ? (
+              <KeyboardArrowUpIcon fontSize="small" />
+            ) : (
+              <KeyboardArrowDownIcon fontSize="small" />
+            )}
 
             <List
               sx={{
@@ -92,24 +84,46 @@ const AllCastHeader = () => {
                 bgcolor: "secondary.main",
                 width: "100%",
                 borderRadius: ".3rem",
-                textAlign: "center",
+                // textAlign: "center",
                 flexDirection: "column",
                 // alignItems: "center",
                 // justifyContent: "center",
                 fontSize: { xs: "1rem", md: "1.6rem" },
+                fontWeight: 600,
               }}
               onClick={handleClick}
             >
-              <ListItem onClick={handleClick}>Characters</ListItem>
+              <ListItem
+                component="option"
+                value="character"
+                onClick={handleFilterClick}
+                sx={{ fontWeight: 600 }}
+              >
+                Characters
+              </ListItem>
               <Divider />
-              <ListItem onClick={handleClick}>Locations</ListItem>
+              <ListItem
+                component="option"
+                value="location"
+                onClick={handleFilterClick}
+                sx={{ fontWeight: 600 }}
+              >
+                Locations
+              </ListItem>
               <Divider />
-              <ListItem onClick={handleClick}>Episodes</ListItem>
+              <ListItem
+                component="option"
+                value="episode"
+                onClick={handleFilterClick}
+                sx={{ fontWeight: 600 }}
+              >
+                Episodes
+              </ListItem>
             </List>
           </Box>
           <Box
             sx={{
-              width: "auto",
+              width: { xs: "60%", md: "50%" },
               height: "100%",
               display: "flex",
               alignItems: "center",
@@ -121,7 +135,7 @@ const AllCastHeader = () => {
           >
             <SearchIcon
               sx={{
-                fontSize: "2.5rem",
+                fontSize: "2rem",
                 bgcolor: "#2a2f3e",
                 height: "100%",
                 p: ".5rem",
@@ -140,7 +154,7 @@ const AllCastHeader = () => {
                 outline: "none",
                 color: "#fff",
                 fontWeight: "500",
-                fontSize: "1.6rem",
+                fontSize: { xs: "1rem", md: "1.6rem" },
               }}
             />
           </Box>

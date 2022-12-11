@@ -15,19 +15,7 @@ const theme = createTheme({
   },
   typography: {
     htmlFontSize: 10,
-    fontFamily: [
-      "TTTravels",
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(","),
+    fontFamily: ["TTTravels", "Roboto", "sans-serif"].join(","),
   },
   overrides: {
     MuiCssBaseline: {

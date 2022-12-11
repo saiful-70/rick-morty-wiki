@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 

@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+
 const HeadingSecondary = () => {
   return (
     <Typography

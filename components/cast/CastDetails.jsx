@@ -10,12 +10,9 @@ const CastDetails = ({ character }) => {
   return (
     <Container maxWidth="xl" className={styles.backgroundCastDetailsWeb}>
       <Logo />
-
       <Grid
         container
         sx={{
-          // display: "flex",
-          // flexDirection: { xs: "column", md: "row" },
           alignItems: { xs: "center" },
           justifyContent: { md: "space-around" },
         }}

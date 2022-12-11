@@ -17,8 +17,8 @@ export default function Home() {
             link="character"
             boxSize={180}
           />
-          <HomeScrollElement title="Episodes" link="episode" boxSize={300} />
-          <HomeScrollElement title="Locations" link="location" boxSize={300} />
+          <HomeScrollElement title="Episodes" link="episode" boxSize={250} />
+          <HomeScrollElement title="Locations" link="location" boxSize={250} />
         </Container>
       </Box>
     </Box>

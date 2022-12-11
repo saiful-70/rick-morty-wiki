@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
-import { Box, Grid, Typography, List, ListItem } from "@mui/material";
+import { Box, Grid, Typography, } from "@mui/material";
 
 const CastDetailsItem = ({ icon, label, episodeLinks, gridValue }) => {
   const [episodes, setEpisodes] = useState([]);
@@ -45,7 +45,6 @@ const CastDetailsItem = ({ icon, label, episodeLinks, gridValue }) => {
         <Box
           sx={{
             position: "relative",
-            // height: "8rem",
             width: "1.5rem",
             height: "1.5rem",
           }}
@@ -57,9 +56,6 @@ const CastDetailsItem = ({ icon, label, episodeLinks, gridValue }) => {
         >
           {label}
         </Typography>
-        {/* <Typography sx={{ fontWeight: 500, fontSize: 25, color: "#fff" }}>
-          {value}
-        </Typography> */}
         {episodes && (
           <ul
             style={{

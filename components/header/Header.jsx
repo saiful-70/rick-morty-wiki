@@ -1,17 +1,8 @@
-import {
-  Typography,
-  Box,
-  Button,
-  linearProgressClasses,
-  Container,
-} from "@mui/material";
+import { Typography, Box, Container } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
 import SlowMotionVideoIcon from "@mui/icons-material/SlowMotionVideo";
-import headerBgImage from "../../public/images/home/Background.png";
 import Logo from "../../components/common/Logo";
 import HeadingPrimary from "../heading/HeadingPrimary";
-// import styles from "*.module.css";
 
 const Header = () => {
   return (
@@ -24,7 +15,6 @@ const Header = () => {
           width: "fit-content",
         }}
       >
-        {/* PRIMARY HEADING */}
         <HeadingPrimary />
         {/* GUN */}
         <Box
@@ -59,7 +49,7 @@ const Header = () => {
               pr: { xs: "3rem", md: 0 },
               my: { xs: "2rem", md: 0 },
               order: { xs: 1, md: 2 },
-              fontSize: "1rem",
+              fontSize: { xs: "1rem", md: "1.2rem" },
               px: { md: "2rem" },
             }}
           >
@@ -84,7 +74,7 @@ const Header = () => {
               cursor: "pointer",
               px: { xs: "2.5rem" },
               py: { xs: "1rem" },
-              fontSize: "1.2rem",
+              fontSize: { xs: "1.2rem", md: "1.6rem" },
               whiteSpace: "nowrap",
             }}
           >
