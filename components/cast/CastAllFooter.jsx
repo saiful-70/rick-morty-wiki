@@ -14,7 +14,12 @@ const CastAllFooter = () => {
       }}
     >
       <Typography
-        sx={{ fontWeight: 600, fontSize: "1.6rem", color: "#fff", mr: 2 }}
+        sx={{
+          fontWeight: 600,
+          fontSize: { xs: "1rem", md: "1.6rem" },
+          color: "#fff",
+          mr: 2,
+        }}
       >
         Page
       </Typography>
@@ -34,8 +39,8 @@ const CastAllFooter = () => {
           placeholder="1"
           value={1}
           style={{
-            width: "4rem",
-            height: "2rem",
+            width: "5rem",
+            height: "3rem",
             backgroundColor: "#2a2f3e",
             border: "none",
             borderRadius: "2rem",
@@ -48,7 +53,12 @@ const CastAllFooter = () => {
       </Box>
       <ArrowCircleRightIcon color="secondary" />
       <Typography
-        sx={{ fontWeight: 600, fontSize: "1.6rem", color: "#fff", ml: 2 }}
+        sx={{
+          fontWeight: 600,
+          fontSize: { xs: "1rem", md: "1.6rem" },
+          color: "#fff",
+          ml: 2,
+        }}
       >
         of 42
       </Typography>
