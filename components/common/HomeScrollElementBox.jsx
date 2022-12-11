@@ -40,7 +40,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginRight: "20px",
+              mr: "2rem",
               p: 0.1,
               transition: "600ms ease-in-out",
             }}
@@ -80,12 +80,12 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                     <Typography
                       component="p"
                       sx={{
-                        fontSize: "1rem",
+                        fontSize: { xs: "1rem", md: "1.6rem" },
                         fontWeight: 500,
                         textAlign: "left",
                         color: "#fff",
                         mt: 1,
-                        width: "15rem",
+                        width: "13rem",
                         wordWrap: "normal",
                         whiteSpace: "nowrap",
                         textOverflow: "ellipsis",
@@ -124,11 +124,11 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                     // component="span"
                     sx={{
                       fontSize: ".5rem",
-                      fontWeight: 500,
+                      fontWeight: 400,
                       textAlign: "left",
                       color: "#fff",
                       mt: 1,
-                      fontSize: ".5rem",
+                      fontSize: "1rem",
                     }}
                   >
                     {link === "episode" ? value.episode : `#${value.id}`}
@@ -140,7 +140,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                       color: "#fff",
                       mt: 1,
                       fontSize: "1.6rem",
-                      width: "20rem",
+                      width: "15rem",
                       wordWrap: "normal",
                       whiteSpace: "nowrap",
                       textOverflow: "ellipsis",

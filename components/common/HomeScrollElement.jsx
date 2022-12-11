@@ -1,14 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import axios from "axios";
 import { useDraggable } from "react-use-draggable-scroll";
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-// import CastBox from "./CastBox";
-import HeadingSecondary from "../heading/HeadingSecondary";
 import HomeScrollElementBox from "./HomeScrollElementBox";
+import HeadingTertiary from "../heading/HeadingTertiary";
 
 const HomeScrollElement = ({ boxSize, title, link }) => {
   let scrl = useRef(null);
@@ -43,7 +40,7 @@ const HomeScrollElement = ({ boxSize, title, link }) => {
   };
 
   return (
-    <Box>
+    <Box sx={{ my: "5rem" }}>
       {/* HEADING */}
       <Box
         sx={{
@@ -60,7 +57,7 @@ const HomeScrollElement = ({ boxSize, title, link }) => {
             alignItems: "center",
           }}
         >
-          <HeadingSecondary title={title} />
+          <HeadingTertiary title={title} />
           {link === "character" && (
             <Box sx={{ ml: 2 }}>
               <ArrowBackIosIcon color="secondary" sx={{ fontSize: "1.5rem" }} />
@@ -98,6 +95,8 @@ const HomeScrollElement = ({ boxSize, title, link }) => {
           overflow: "hidden",
           postion: "relative",
           alignItems: "center",
+          // overflowScrolling: "touch",
+          // WebkitOverflowScrolling: "touch",
         }}
         {...events}
         ref={scrl}

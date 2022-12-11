@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import CastDetailsItem from "./CastDetailsItem";
-import CastDetailsEpisodes from "./CastDetailsEpisodes";
+import CastDetailsItemEpisode from "./CastDetailsItemEpisode";
 import Logo from "../common/Logo";
 import styles from "../../styles/Cast.module.css";
 
@@ -142,7 +142,7 @@ const CastDetails = ({ character }) => {
               </Grid>
               <Grid item xs={12}>
                 {character.episode && (
-                  <CastDetailsEpisodes
+                  <CastDetailsItemEpisode
                     gridValue={12}
                     icon="/images/cast/Episode.png"
                     label="Episode(s)"

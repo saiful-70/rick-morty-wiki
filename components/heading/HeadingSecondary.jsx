@@ -1,11 +1,16 @@
 import { Typography } from "@mui/material";
-const HeadingSecondary = ({ title }) => {
+const HeadingSecondary = () => {
   return (
     <Typography
-      variant="h3"
-      sx={{ fontSize: "1.6rem", color: "#fff", fontWeight: 600, m: 0 }}
+      variant="h2"
+      sx={{
+        fontSize: { xs: "2rem", md: "4rem" },
+        color: "#fff",
+        fontWeight: 600,
+        color: "secondary.main",
+      }}
     >
-      {title}
+      The Cast
     </Typography>
   );
 };

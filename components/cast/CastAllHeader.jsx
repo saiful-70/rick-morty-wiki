@@ -18,6 +18,7 @@ import Logo from "../common/Logo";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import SearchIcon from "@mui/icons-material/Search";
+import HeadingSecondary from "../heading/HeadingSecondary";
 
 const AllCastHeader = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -35,17 +36,7 @@ const AllCastHeader = () => {
         alignItems: "center",
       }}
     >
-      <Typography
-        variant="h2"
-        sx={{
-          fontSize: { xs: "2rem", md: "4rem" },
-          color: "#fff",
-          fontWeight: 600,
-          color: "secondary.main",
-        }}
-      >
-        The Cast
-      </Typography>
+      <HeadingSecondary />
       <Box
         sx={{
           width: { xs: "60%", md: "30rem" },
