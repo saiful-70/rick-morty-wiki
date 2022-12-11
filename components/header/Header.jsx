@@ -19,7 +19,7 @@ const Header = () => {
       <Box
         sx={{
           position: "relative",
-          width: { xs: "80%" },
+          width: { xs: "80%", md: "100%" },
         }}
       >
         {/* PRIMARY HEADING */}

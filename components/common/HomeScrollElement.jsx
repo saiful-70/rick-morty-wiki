@@ -79,9 +79,9 @@ const HomeScrollElement = ({ boxSize, title, link }) => {
               sx={{
                 fontWeight: 600,
                 borderRadius: ".5rem",
-                padding: "3px 1rem",
+                p: ".5rem 1.5rem",
                 border: "1px solid #9DFE00",
-                fontSize: ".5rem",
+                fontSize: "1rem",
                 color: "#fff",
                 cursor: "pointer",
               }}

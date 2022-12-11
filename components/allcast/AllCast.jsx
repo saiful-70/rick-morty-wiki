@@ -41,9 +41,9 @@ const AllCast = () => {
                     "linear-gradient(to bottom right,   #9DFE00,#14D9E6)",
                   width: "100%",
                   height: "100%",
-                  borderRadius: "5px",
+                  borderRadius: ".5rem",
                   clipPath:
-                    "polygon(0% 0%, 100% 0, 100% 80%, 80% 100%, 0% 100%)",
+                    "polygon(0% 0%, 100% 0, 100% 85%, 70% 100%, 0% 100%)",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
@@ -58,7 +58,7 @@ const AllCast = () => {
                     height: "100%",
                     borderRadius: "5px",
                     clipPath:
-                      "polygon(0% 0%, 100% 0, 100% 80%, 80% 100%, 0% 100%)",
+                      "polygon(0% 0%, 100% 0, 100% 85%, 70% 100%, 0% 100%)",
                   }}
                 >
                   <Link href={`/character/${character.id}`}>
@@ -69,7 +69,7 @@ const AllCast = () => {
                         flexDirection: "column",
                         justifyContent: "space-between",
                         // alignItems: "center",
-                        padding: ".5rem",
+                        padding: "1rem",
                       }}
                     >
                       <Box
@@ -77,7 +77,7 @@ const AllCast = () => {
                           position: "relative",
                           // height: "8rem",
                           width: "auto",
-                          height: { xs: "12rem", md: "14rem" },
+                          height: { xs: "14rem", md: "14rem" },
                           marginBottom: 1,
                         }}
                       >
@@ -91,16 +91,16 @@ const AllCast = () => {
                       <Typography
                         component="p"
                         sx={{
-                          fontSize: ".5rem",
-                          fontWeight: 600,
+                          fontSize: { xs: "1rem", md: "1.6rem" },
+                          fontWeight: 500,
                           textAlign: "left",
                           color: "#fff",
                           mt: 1,
-                          width: { xs: "12rem", md: "15rem" },
-                          wordWrap: "normal",
-                          whiteSpace: "nowrap",
-                          textOverflow: "ellipsis",
-                          overflow: "hidden",
+                          // width: { xs: "15rem", md: "15rem" },
+                          // wordWrap: "normal",
+                          // whiteSpace: "nowrap",
+                          // textOverflow: "ellipsis",
+                          // overflow: "hidden",
                         }}
                       >
                         {character.name}

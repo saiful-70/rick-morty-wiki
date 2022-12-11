@@ -15,7 +15,7 @@ export default function Home() {
           <HomeScrollElement
             title="Meet The Cast"
             link="character"
-            boxSize={200}
+            boxSize={180}
           />
           <HomeScrollElement title="Episodes" link="episode" boxSize={300} />
           <HomeScrollElement title="Locations" link="location" boxSize={300} />

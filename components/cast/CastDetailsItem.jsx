@@ -11,15 +11,14 @@ const CastDetailsItem = ({ icon, label, value, gridValue }) => {
       sx={{
         background:
           "linear-gradient(to bottom ,rgba(20, 216, 230, 0.9), rgba(157, 254, 0, 0.9))",
-        p: 0.2,
-        borderRadius: 0.5,
-        borderRadius: "3px",
+        p: 0.1,
+        borderRadius: ".5rem",
       }}
     >
       <Box
         sx={{
           bgcolor: "rgba(42, 47, 62, 0.95)",
-          borderRadius: 0.5,
+          borderRadius: ".5rem",
           px: 2,
           py: 1,
         }}
@@ -32,10 +31,10 @@ const CastDetailsItem = ({ icon, label, value, gridValue }) => {
             height: "2rem",
           }}
         >
-          <Image alt={icon} src={icon} fill style={{ borderRadius: "5px" }} />
+          <Image alt={icon} src={icon} fill style={{ borderRadius: ".5rem" }} />
         </Box>
         <Typography
-          sx={{ fontSize: ".5rem", color: "#fff", fontWeight: 500, my: 1 }}
+          sx={{ fontSize: "1rem", color: "#fff", fontWeight: 500, my: 1 }}
         >
           {label}
         </Typography>
@@ -50,16 +49,11 @@ const CastDetailsItem = ({ icon, label, value, gridValue }) => {
               sx={{
                 position: "relative",
                 // height: "8rem",
-                width: "1.2rem",
-                height: "1.2rem",
+                width: "2rem",
+                height: "2rem",
               }}
             >
-              <Image
-                alt="logo"
-                src="/images/cast/Redirect.png"
-                fill
-                style={{ borderRadius: "5px" }}
-              />
+              <Image alt="logo" src="/images/cast/Redirect.png" fill />
             </Box>
           </Box>
         ) : (

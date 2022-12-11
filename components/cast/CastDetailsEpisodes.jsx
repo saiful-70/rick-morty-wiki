@@ -53,7 +53,7 @@ const CastDetailsItem = ({ icon, label, episodeLinks, gridValue }) => {
           <Image alt="logo" src={icon} fill style={{ borderRadius: "5px" }} />
         </Box>
         <Typography
-          sx={{ fontSize: "5px", color: "#fff", fontWeight: 500, my: 1 }}
+          sx={{ fontSize: "1rem", color: "#fff", fontWeight: 500, my: 1 }}
         >
           {label}
         </Typography>

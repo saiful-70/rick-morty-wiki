@@ -36,8 +36,9 @@ const AllCastHeader = () => {
       }}
     >
       <Typography
+        variant="h2"
         sx={{
-          fontSize: { xs: "2rem", md: "5rem" },
+          fontSize: { xs: "2rem", md: "4rem" },
           color: "#fff",
           fontWeight: 600,
           color: "secondary.main",
@@ -47,7 +48,7 @@ const AllCastHeader = () => {
       </Typography>
       <Box
         sx={{
-          width: { xs: "60%", md: "25rem" },
+          width: { xs: "60%", md: "30rem" },
           // background: "linear-gradient(to bottom right,   #9DFE00,#14D9E6)",
           // borderRadius: "2rem",
           // p: 0.1,
@@ -73,17 +74,19 @@ const AllCastHeader = () => {
               bgcolor: "secondary.main",
               cursor: "pointer",
               display: "flex",
-              width: { xs: "60%", md: "50%" },
+              width: { xs: "auto", md: "50%" },
               position: "relative",
               alignItems: "center",
               height: "100%",
               borderTopLeftRadius: "2rem",
               borderBottomLeftRadius: "2rem",
-              pl: 1,
+              px: 2,
             }}
             onClick={handleClick}
           >
-            <Typography sx={{ fontWeight: 600, fontSize: ".5rem" }}>
+            <Typography
+              sx={{ fontWeight: 600, fontSize: { xs: "1rem", md: "1.6rem" } }}
+            >
               Characters
             </Typography>
             {isOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
@@ -102,7 +105,7 @@ const AllCastHeader = () => {
                 flexDirection: "column",
                 // alignItems: "center",
                 // justifyContent: "center",
-                fontSize: 1,
+                fontSize: { xs: "1rem", md: "1.6rem" },
               }}
               onClick={handleClick}
             >
@@ -115,7 +118,7 @@ const AllCastHeader = () => {
           </Box>
           <Box
             sx={{
-              width: "50%",
+              width: "auto",
               height: "100%",
               display: "flex",
               alignItems: "center",
@@ -128,9 +131,10 @@ const AllCastHeader = () => {
             <SearchIcon
               sx={{
                 fontSize: "2.5rem",
-                backgroundColor: "#2a2f3e",
+                bgcolor: "#2a2f3e",
                 height: "100%",
-                pl: 1,
+                p: ".5rem",
+                width: "auto",
               }}
             />
             <input
@@ -145,6 +149,7 @@ const AllCastHeader = () => {
                 outline: "none",
                 color: "#fff",
                 fontWeight: "500",
+                fontSize: "1.6rem",
               }}
             />
           </Box>

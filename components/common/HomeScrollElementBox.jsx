@@ -35,8 +35,8 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
               borderRadius: "5px",
               clipPath:
                 link === "character"
-                  ? "polygon(0% 0%, 100% 0, 100% 80%, 80% 100%, 0% 100%)"
-                  : "polygon(0% 0%, 100% 0, 100% 75%, 90% 100%, 0% 100%)",
+                  ? "polygon(0% 0%, 100% 0, 100% 85%, 70% 100%, 0% 100%)"
+                  : "polygon(0% 0%, 100% 0, 100% 75%, 85% 100%, 0% 100%)",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -55,7 +55,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                     height: "auto",
                     borderRadius: "5px",
                     clipPath:
-                      "polygon(0% 0%, 100% 0, 100% 80%, 80% 100%, 0% 100%)",
+                      "polygon(0% 0%, 100% 0, 100% 85%, 70% 100%, 0% 100%)",
                   }}
                 >
                   <Box
@@ -72,6 +72,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                         position: "relative",
                         width: "auto",
                         height: `calc(${boxSize} - 3rem)`,
+                        mb: 1,
                       }}
                     >
                       <Image alt="logo" src={value.image} fill />
@@ -79,7 +80,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                     <Typography
                       component="p"
                       sx={{
-                        fontSize: ".5rem",
+                        fontSize: "1rem",
                         fontWeight: 500,
                         textAlign: "left",
                         color: "#fff",
@@ -105,12 +106,12 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                   height: "auto",
                   borderRadius: "5px",
                   clipPath:
-                    "polygon(0% 0%, 100% 0, 100% 75%, 90% 100%, 0% 100%)",
+                    "polygon(0% 0%, 100% 0, 100% 75%, 85% 100%, 0% 100%)",
                 }}
               >
                 <Box
                   sx={{
-                    padding: "1rem",
+                    p: "1rem",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
@@ -120,10 +121,10 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                   }}
                 >
                   <Typography
-                    component="span"
+                    // component="span"
                     sx={{
                       fontSize: ".5rem",
-                      fontWeight: 300,
+                      fontWeight: 500,
                       textAlign: "left",
                       color: "#fff",
                       mt: 1,
@@ -134,8 +135,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: ".5rem",
-                      fontWeight: 600,
+                      fontWeight: 500,
                       textAlign: "left",
                       color: "#fff",
                       mt: 1,
