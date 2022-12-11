@@ -118,21 +118,6 @@ const HeadingPrimary = () => {
         <Box component="span" sx={{ color: "white", fontStyle: "italic" }}>
           WIKI
         </Box>
-        {/* GUN */}
-        <Box
-          sx={{
-            position: "absolute",
-            height: { xs: "17rem", md: "30rem" },
-            width: { xs: "17rem", md: "27rem" },
-            display: "flex",
-            margin: "0 auto",
-            display: "inline-block",
-            top: { xs: "-2rem", md: "-10rem" },
-            right: { xs: "1rem", md: "-22rem" },
-          }}
-        >
-          <Image alt="logo" src="/images/home/Gun.png" fill />
-        </Box>
       </Typography>
     </Box>
   );

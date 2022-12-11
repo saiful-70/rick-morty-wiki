@@ -20,11 +20,27 @@ const Header = () => {
       <Box
         sx={{
           position: "relative",
-          // width: { xs: "80%", md: "100%" },
+          width: { xs: "80%", md: "100%" },
+          width: "fit-content",
         }}
       >
         {/* PRIMARY HEADING */}
         <HeadingPrimary />
+        {/* GUN */}
+        <Box
+          sx={{
+            position: "absolute",
+            height: { xs: "17rem", md: "30rem" },
+            width: { xs: "17rem", md: "27rem" },
+            display: "flex",
+            margin: "0 auto",
+            display: "inline-block",
+            bottom: { xs: "5rem", md: "-3rem" },
+            right: { xs: "-5rem", md: "-22rem" },
+          }}
+        >
+          <Image alt="logo" src="/images/home/Gun.png" fill />
+        </Box>
 
         <Box
           sx={{
