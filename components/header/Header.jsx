@@ -19,6 +19,7 @@ const Header = () => {
       <Box
         sx={{
           position: "relative",
+          width: { xs: "80%" },
         }}
       >
         {/* PRIMARY HEADING */}
@@ -27,7 +28,7 @@ const Header = () => {
           sx={{
             fontWeight: 800,
             fontSize: {
-              xs: "4rem",
+              xs: "4.5rem",
               md: "10rem",
             },
             // textAlign: { xs: "left", md: "center" },
@@ -43,7 +44,7 @@ const Header = () => {
               display: "flex",
               margin: "0 auto",
               display: "inline-block",
-              top: { xs: "-3rem", md: "-4rem" },
+              top: { xs: "-2.5rem", md: "-3rem" },
               left: { xs: "-4rem", md: "-6rem" },
             }}
           >
@@ -56,8 +57,8 @@ const Header = () => {
           <Box
             sx={{
               position: "relative",
-              height: { xs: "4rem", md: "10rem" },
-              width: { xs: "5rem", md: "11rem" },
+              height: { xs: "5rem", md: "10rem" },
+              width: { xs: "6rem", md: "11rem" },
               display: "flex",
               margin: "0 auto",
               display: "inline-block",
@@ -98,12 +99,12 @@ const Header = () => {
           <Box
             sx={{
               position: "absolute",
-              height: { xs: "15rem", md: "25rem" },
-              width: { xs: "15rem", md: "22rem" },
+              height: { xs: "17rem", md: "25rem" },
+              width: { xs: "17rem", md: "22rem" },
               display: "flex",
               margin: "0 auto",
               display: "inline-block",
-              top: { xs: "2rem", md: "5rem" },
+              top: { xs: "5rem", md: "5rem" },
               right: { xs: "-8.5rem", md: "-18rem" },
             }}
           >
@@ -117,7 +118,7 @@ const Header = () => {
             flexDirection: { xs: "column", md: "row" },
             justifyContent: { md: "center" },
             alignItems: { xs: "flex-start", md: "center" },
-            width: { md: "75%" },
+            width: { xs: "90%", md: "75%" },
             m: { md: "0 auto" },
           }}
         >
@@ -125,10 +126,10 @@ const Header = () => {
             sx={{
               color: "#14D9E6",
               fontWeight: 600,
-              paddingRight: "3rem",
-              marginTop: "1rem",
+              pr: "3rem",
+              my: "1rem",
               order: { xs: 1, md: 2 },
-              fontSize: ".5rem",
+              fontSize: "1.1rem",
             }}
           >
             Brilliant but boozy scientist Rick hijacks his fretful teenage
@@ -150,9 +151,9 @@ const Header = () => {
               order: { xs: 2, md: 1 },
               mr: { md: "2rem" },
               cursor: "pointer",
-              px: { xs: 2 },
-              py: { md: 1 },
-              fontSize: "1rem",
+              px: { xs: 3 },
+              py: { xs: 1 },
+              fontSize: "1.2rem",
               whiteSpace: "nowrap",
             }}
           >
