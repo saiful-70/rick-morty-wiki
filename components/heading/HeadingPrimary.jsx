@@ -14,6 +14,7 @@ const HeadingPrimary = () => {
           color: "white",
           fontStyle: "italic",
           fontWeight: 800,
+          position: "relative",
           fontSize: {
             xs: "4.5rem",
             md: "10rem",
@@ -71,7 +72,6 @@ const HeadingPrimary = () => {
             margin: "0 auto",
             display: { xs: "none", md: "inline-block" },
             top: "-.5rem",
-            right: 0,
           }}
         >
           <Image alt="pill" src="/images/home/pill.png" fill />
