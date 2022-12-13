@@ -1,7 +1,4 @@
-import {
-  Typography,
-  Box,
-} from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import Image from "next/image";
 
 const HeadingPrimary = () => {
@@ -51,7 +48,7 @@ const HeadingPrimary = () => {
             display: "inline-block",
           }}
         >
-          <Image alt="logo" src="/images/home/portal.png" fill />
+          <Image alt="portal" src="/images/home/portal.png" fill />
         </Box>{" "}
         <Box
           component="span"
@@ -77,7 +74,7 @@ const HeadingPrimary = () => {
             right: 0,
           }}
         >
-          <Image alt="logo" src="/images/home/pill.png" fill />
+          <Image alt="pill" src="/images/home/pill.png" fill />
         </Box>
       </Typography>
 

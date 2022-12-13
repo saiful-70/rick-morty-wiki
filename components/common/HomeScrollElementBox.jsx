@@ -38,7 +38,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              mr: "2rem",
+              mr: "20px",
               p: "1px",
               transition: "600ms ease-in-out",
             }}
@@ -73,7 +73,7 @@ const HomeScrollElementBox = ({ boxSize, link }) => {
                         mb: 1,
                       }}
                     >
-                      <Image alt="logo" src={value.image} fill />
+                      <Image alt={value.image} src={value.image} fill />
                     </Box>
                     <Typography
                       component="p"

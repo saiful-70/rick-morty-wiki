@@ -24,6 +24,7 @@ const AllCast = () => {
         console.log(err.message);
       });
   }, []);
+
   return (
     <Container maxWidth="xl" className={styles.backgroundCastWeb}>
       <Logo />
@@ -78,7 +79,7 @@ const AllCast = () => {
                         }}
                       >
                         <Image
-                          alt="logo"
+                          alt={character.name}
                           src={character.image}
                           fill
                         />

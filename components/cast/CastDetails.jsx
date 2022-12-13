@@ -73,7 +73,7 @@ const CastDetails = ({ character }) => {
                     }}
                   >
                     <Image
-                      alt="logo"
+                      alt={character.name}
                       src={character.image}
                       fill
                       style={{ borderRadius: "5px" }}

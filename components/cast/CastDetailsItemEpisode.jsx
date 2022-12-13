@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
-import { Box, Grid, Typography, } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 const CastDetailsItem = ({ icon, label, episodeLinks, gridValue }) => {
   const [episodes, setEpisodes] = useState([]);
@@ -22,7 +22,6 @@ const CastDetailsItem = ({ icon, label, episodeLinks, gridValue }) => {
       .catch((err) => console.log(err.message));
   }, [episodeLinks]);
 
-  // console.log(episodes);
   return (
     <Grid
       item
@@ -49,7 +48,7 @@ const CastDetailsItem = ({ icon, label, episodeLinks, gridValue }) => {
             height: "1.5rem",
           }}
         >
-          <Image alt="logo" src={icon} fill style={{ borderRadius: "5px" }} />
+          <Image alt={icon} src={icon} fill style={{ borderRadius: "5px" }} />
         </Box>
         <Typography
           sx={{ fontSize: "1rem", color: "#fff", fontWeight: 500, my: 1 }}

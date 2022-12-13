@@ -11,8 +11,7 @@ const Header = () => {
       <Box
         sx={{
           position: "relative",
-          width: { xs: "80%", md: "100%" },
-          width: "fit-content",
+          width: "100%",
         }}
       >
         <HeadingPrimary />
@@ -26,10 +25,10 @@ const Header = () => {
             margin: "0 auto",
             display: "inline-block",
             bottom: { xs: "5rem", md: "-3rem" },
-            right: { xs: "-5rem", md: "-22rem" },
+            right: { xs: "-8rem", md: "-22rem" },
           }}
         >
-          <Image alt="logo" src="/images/home/Gun.png" fill />
+          <Image alt="gun" src="/images/home/Gun.png" fill />
         </Box>
 
         <Box
